@@ -34,7 +34,7 @@ public class VideoPresentation extends Presentation {
             public void onCompletion(MediaPlayer mp) {
 
                 // play looping video
-                videoView.setVideoPath("");
+                videoView.setVideoPath("/mnt/external_sd/loopvideo.mp4");
                 videoView.start();
             }
         });

@@ -111,14 +111,14 @@ public class MainActivity extends AppCompatActivity {
     public void onCharacter(View v) {
 
         if (mPresentation != null)
-            mPresentation.playVideo("mnt/extsd/video1.mp4");
+            mPresentation.playVideo("/mnt/external_sd/video1.mp4");
 
     }
 
     public void onHunter(View v) {
 
         if (mPresentation != null)
-            mPresentation.playVideo("mnt/extsd/video2.mp4");
+            mPresentation.playVideo("/mnt/external_sd/video2.mp4");
 
     }
 
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 mPresentation.show();
                 // play looping video
-                mPresentation.playVideo("mnt/extsd/loopvideo.mp4");
+                mPresentation.playVideo("/mnt/external_sd/loopvideo.mp4");
 
             } catch (WindowManager.InvalidDisplayException ex) {
                 // Couldn't show presentation - display was already removed
